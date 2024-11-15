@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{a4wide}
+
+\title{The title of my project}
+%\author{not specified, not necessary here}
+\date{}
+\begin{document}
+\maketitle
+A short description of your project, 3--5 sentences. Expand the description from your previous step.
+
+\section{Introduction}
+Table~\ref{tab:intro_comparative} shows a list of solutions to compare. Put here what the table presents, briefly. 
+
+\begin{table}[!htbp]
+\label{tab:intro_comparative}
+\caption{Comparative analysis of basic solution to my problem, change the title of the table.}
+\begin{tabular}{p{5cm}|p{5cm}|p{5cm}}
+	Solution & Strengths & Weakness \\
+	\hline
+	High-order canonical correlation analysis~\cite{9095246} & 
+	Large feasible set of ranking functions; fast convergence to a local optimum &
+	Does not provide global optimum in the feasible set of functions \\
+\end{tabular} 
+\end{table}
+ 
+ The section references contain the full list, collected for this project. 
+\nocite{*} % Remove this to keep the cited referernces only
+
+\bibliographystyle{unsrt}
+\bibliography{Name-theArt}
+\end{document}
